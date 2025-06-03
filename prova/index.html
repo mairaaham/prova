@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Site Padrão</title>
+  <style>
+      
+
+
+.conteudo-02 { 
+  max-width:1000px;
+  margin: 0 auto 40px;
+  font-size: 25px;
+  font-weight: 300;
+    line-height: 1.6;
+}
+
+.titulo-02  {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: white;
+   font-weight: 300;
+    line-height: 1.6;
+}
+
+.subtitulo-02 {
+  font-size: 35px;
+  color: #f47e34; 
+  margin-bottom: 30px;
+  display: block;
+    font-weight: 300;
+}    
+
+.bloco-02 {
+  width: 85%;
+  padding: 100px;
+  background-color: #746547; 
+  text-align: center;
+  color: white;
+}
+
+.blocog-01{ 
+    box-shadow: 0px -50px 40px 60px #8E7B57!important; 
+    position: relative;
+     z-index:1;
+     margin-top: 0px!important;
+    }
+    
+    .bloco-01 {
+     display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 60px auto;
+      text-align: center;
+    }
+
+    .item-01 {
+      width: 360px;
+      margin: 20px;
+      color: white;
+    }
+
+    .img-01 {
+      width: 350px;
+      height: 350px;
+      background: #f47e34;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px auto;
+      opacity: 0;
+    animation: aparecerBaixo 1.5s ease-out 0.5s forwards;
+    }
+
+    .titulo-01 { 
+   font-size: 45px;
+   color: white;
+   font-weight: 300;
+   margin-bottom: 20px;
+   animation: aparecerCentro 1.5s ease-out 0.5s forwards; 
+   animation-fill-mode: both;
+    }
+    
+    .conteudo-01 {
+      font-size: 25px;
+      max-width: 400px;
+      margin: 0 auto 25px;
+  font-weight: 300;
+}
+
+    .botao {
+      display: inline-block;
+      padding: 15px 50px;
+      vertical-align: middle;
+      line-height: 20px;
+      height: 15px;
+      width: 130px;
+      border-radius: 30px;
+      font-size: 26px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .botao.borda {
+      border: 2px solid white;
+      color: white;
+      background-color: transparent;
+    }
+
+    .botao:hover {
+      background-color: #f47e34;
+      color: white;
+      border: none;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #99835A;
+      font-family: 'calibri', sans-serif;
+
+    }
+    .cabecalho {
+      background: url('Imagens/carrossel.gif') no-repeat center center/cover;
+      height: 300px;
+      position: relative;
+      color: white;
+      padding: 35px;
+      text-align: center;
+    }
+    .topo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 15px;
+    }
+    .logo {
+      text-align: center; 
+      margin-left: 6%;
+      margin-right: 8%;
+    }
+    .menu {
+      display: flex;
+      font-size: 24px;
+      gap: 50px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font: 'calibri';
+        font-weight: 300;
+    }
+     
+      .menu li {
+      opacity: 100;
+      transform: translateY(4000px);
+      animation: aparecerTopo 1.5s ease-out 0.5s forwards;
+    }
+    
+    .menu li:nth-child(1) { animation-delay: 0s; }
+    .menu li:nth-child(2) { animation-delay: 0.15s; }
+    .menu li:nth-child(3) { animation-delay: 0.30s; }
+    .menu li:nth-child(4) { animation-delay: 0.45s; }
+    .menu li:nth-child(5) { animation-delay: 0.60s; }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+    }
+    .menu li a:hover { color: #f47e34;}
+    
+    .titulo {
+      text-align: center; 
+      position: absolute;
+      margin-left: 22%;
+      bottom: 95px;
+      font-size: 60px;
+      padding: 10px;
+      border-radius: 5px;
+     animation: aparecerCentro 1.5s ease-out 0.5s forwards;
+     animation-fill-mode: both;
+       font-weight: 300;
+    }
+    @keyframes aparecerTopo { 0% {
+        opacity: 0;
+        transform: translateY(-60px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+     @keyframes aparecerBaixo { 0% {
+        opacity: 1;
+        transform: translateY(400px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes aparecerCentro {
+      0% {
+        opacity: 0;
+        transform: translateX(0%) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+      }
+    }
+
+.servicos {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.titulo-servicos {
+  font-size: 50px;
+  color: #f47e34;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+.bloco-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.item-servico {
+  max-width: 220px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.item-servico:hover {
+  background-color: #97969681;
+  box-shadow:0 2px 15px #fffefe81;
+  transform: translateY(-5px);
+}
+
+.img-servico {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-servico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-servico h3 {
+  color: #F27F33;
+  font-size: 30px;
+  margin-bottom: 10px;
+    font-weight: 400;
+
+}
+
+.item-servico p {
+  font-size: 20px;
+  color: #917d59;
+  font-weight: 300;
+}
+
+
+
+.contato {
+  display: flex;                
+  justify-content: center;      
+  align-items: center;          
+  padding: 100px 0;             
+  background-color: #F47F34;
+  color: white;
+  height: 300px;
+  font-weight: 300;
+}
+
+
+.formulario-container {
+  width: 85%;
+  max-width: 700px;
+  text-align: center;
+}
+
+
+.formulario-container h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font: 'calibri';
+  font-weight: 300;
+}
+
+
+.linha {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+
+input,
+textarea {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+
+textarea {
+  height: 100%;
+  width: 86%;
+  border-radius: 25px;
+  resize: vertical;
+  margin: 0 auto 20px; 
+  display: block;       
+  text-align: center;
+  padding: 15px;
+  font:'calibri'
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+
+.recaptcha {
+  display: block;
+  margin: 0 auto 20px; 
+  height: 70px;
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;          
+  padding: 15px 40px;
+  background-color: white;
+  color: #F47F34;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.rodape-total {
+      background: #746447;
+      padding: 30px 0 0 0;
+    }
+    
+    .conteudo-rodape {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .rodape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 100px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .contatos {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      font: 24px Calibri, sans-serif;
+      font-weight: lighter;
+      color: #fff;
+    }
+
+    .contatos div {
+      display: flex;
+      align-items: center;
+    }
+
+    .contatos img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .social {
+      display: flex;
+      gap: 2px;
+    }
+
+    .social img {
+      height: 80px;
+    }
+
+    .linha-inferior {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      border-top: 0px;}
+
+    .linha-inferior img {
+      height: 25px;
+      margin-bottom: 2px; 
+    }
+
+    .texto-rodape {
+      color: #fff;
+      font: 14px Calibri, sans-serif;
+ 
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  
+    <header class="cabecalho">
+    <div class="topo">
+      <div class="logo">
+          <img src="Imagens/logo2.png" alt="logo" />
+      </div>
+      <ul class="menu">
+        <li><a target="blank" href="index.html" title="Projeto Web - Ag&ecirc;ncia, Projetos, Marketing, Websites">HOME</a></li> <li><a target="blank" href="https://www.paginaempresassehouvesse" title="Projeto Web Site - Cria&ccedil;&atilde;o de Websites para Empresas em Campinas, S&atilde;o Paulo - SP" >EMPRESA</a></li> <li><a target="blank" href="https://www.paginaservicoshouvesse" title="Ag&ecirc;ncia Digital, Servi&ccedil;os Web, Marketing">SERVIÇOS</a></li> <li><a target="blank" href="https://www.paginaportfoliosehouvesse" title="Criar Site , Website, Site, Crie o seu Web Site">PORTFÓLIO</a></li> <li><a target="blank" href="https://www.paginacontatosehouvesse" title="Contato Projeto Web Site - Empresa em Campinas, S&atilde;o Paulo - SP">CONTATO</a></li> </ul> </ul>
+    </div>
+    <div class="titulo">MODELO DE SITE PADRÃO 2</div>
+  </header>
+  
+  <div class="blocog-01">
+ 
+  <div class="bloco-01">
+    
+    <div class="item-01">
+      <div class="img-01"><img src="Imagens/cortado laptop1.jpeg" alt="sites" /></div>
+      <div class="titulo-01">Sites</div>
+      <div class="conteudo-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</div>
+      <a href="#" class="botao borda">Entrar</a>
+    </div>
+
+    <div class="item-01">
+      <div class="img-01"><img src="Imagens/cortado modem1.jpeg" alt="hospedagem" /></div>
+      <div class="titulo-01">Hospedagem</div>
+      <div class="conteudo-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</div>
+      <a href="#" class="botao borda">Entrar</a>
+    </div>
+
+    <div class="item-01">
+      <div class="img-01"><img src="Imagens/cortado baloes1.jpeg" alt="manutenção" /></div>
+      <div class="titulo-01">Manutenção</div>
+      <div class="conteudo-01">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</div>
+      <a href="#" class="botao borda">Entrar</a>
+    </div>
+
+  </div>
+  </div>
+  
+<div class="bloco-02">
+  <div class="item2">
+    <div class="titulo-02">SEJA BEM-VINDO</div>
+    <div class="subtitulo-02">Veja o nosso site e encontre a sua solução para seu Site.</div>
+    <div class="conteudo-02">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies lorem lacinia eleifend ac sit amet mauris. Aliquam eget condimentum urna, vitae tristique mi. Aenean dapibus purus et magna vehicula, efficitur elementum risus pulvinar.
+    </div>
+    <a href="#" class="botao borda">Entrar</a>
+  </div>
+</div>
+
+<section class="servicos">
+  <h2 class="titulo-servicos">VEJA ALGUNS DOS NOSSOS SERVIÇOS</h2>
+  <div class="bloco-servicos">
+    <div class="item-servico">
+      <div class="img-servico">
+        <img src="Imagens/serviço1.png" alt="Otimização">
+      </div>
+      <h3>Otimização</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+    </div>
+    <div class="item-servico">
+      <div class="img-servico">
+        <img src="Imagens/serviço2.png" alt="Logotipo">
+      </div>
+      <h3>Logotipo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+    </div>
+    <div class="item-servico">
+      <div class="img-servico">
+        <img src="Imagens/serviço 3.png" alt="Newsletter">
+      </div>
+      <h3>Newsletter</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+    </div>
+    <div class="item-servico">
+      <div class="img-servico">
+        <img src="Imagens/serviço 4.png" alt="Cartão Visita">
+      </div>
+      <h3>Cartão Visita</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae massa ultricies.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contato">
+  <div class="form-container">
+    <h2>ENTRE EM CONTATO</h2>
+    <form>
+      <div class="linha">
+        <input type="text" placeholder="Nome:" required>
+        <input type="email" placeholder="E-mail:" required>
+      </div>
+      <textarea placeholder="Mensagem:" required></textarea>
+      <img src="Imagens/recaptcha.png" alt="reCAPTCHA falso" class="recaptcha">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15457.223279332622!2d-51.31668!3d-14.409526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2d6688249813%3A0x92328269928cdb62!2sAg%C3%AAncia%20Projeto%20Web%20-%20Empresa%20de%20Cria%C3%A7%C3%A3o%20de%20Site!5e0!3m2!1spt-BR!2sus!4v1748906729275!5m2!1spt-BR!2sus" width="1345" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="rodape-total">
+    <div class="conteudo-rodape">
+      <div class="rodape">
+        <div class="contatos">
+          <div>
+            <img src="Imagens/phone.png" alt="Telefone"> (19) 3886-1377
+          </div>
+          <div>
+            <img src="Imagens/envelope.png" alt="Email"> comercial@projetoweb.com.br
+          </div>
+        </div>
+
+        <div class="social">
+          <a href="#" target="_blank">
+            <img src="Imagens/facebook.png" alt="Facebook">
+          </a>
+          <a href="#" target="_blank">
+            <img src="Imagens/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      
+      <div class="linha-inferior">
+        <img src="Imagens/logo.png" alt="Logo ProjetoWeb">
+        <div class="texto-rodape">Criação de Sites</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>
